@@ -11,7 +11,7 @@ class PlayerInput : MonoBehaviour
         vertical = Input.GetAxisRaw("Vertical");
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if(semiFixedCamera != null)
+        /*if(semiFixedCamera != null)
         {
             float rotateDirection = Input.GetKeyDown("Rotate camera");
             if(rotateDirection > 0)
@@ -21,7 +21,7 @@ class PlayerInput : MonoBehaviour
                 semiFixedCamera.TurnCamera(true);
 
             }
-        }
+        }*/
     }
 
     private void FixedUpdate()
