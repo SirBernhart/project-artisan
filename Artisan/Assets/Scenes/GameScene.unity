@@ -600,7 +600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3431888725f28724eb36057d9e97c74c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraOffset: {x: 0, y: 9.5, z: 3}
+  cameraOffset: {x: 0, y: 9.5, z: -6}
   target: {fileID: 1088098126}
 --- !u!114 &1333569641
 MonoBehaviour:
