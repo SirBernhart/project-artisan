@@ -3,8 +3,8 @@
 class PlayerInput : MonoBehaviour
 {
     float vertical, horizontal;
-    [SerializeField] Movement playerMovement;
-    [SerializeField] SemiFixedCameraControl semiFixedCamera;
+    [SerializeField] private Movement playerMovement;
+    [SerializeField] private SemiFixedCameraControl semiFixedCamera;
     [SerializeField] private ItemCollector itemCollector;
 
     private void Update()
