@@ -8,13 +8,13 @@ public class Movement : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [SerializeField] private float gravity;
     [SerializeField] private GroundedChecker groundedChecker;
+    private float downwardSpeed = 0;
 
     private void Start()
     {
         moveSpeed *= 100;
     }
 
-    private float downwardSpeed = 0;
     public void Move(float horizontal, float vertical)
     {
         if (groundedChecker.GetIsGrounded())
