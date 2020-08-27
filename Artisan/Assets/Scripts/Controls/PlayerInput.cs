@@ -5,11 +5,17 @@ class PlayerInput : MonoBehaviour
     float vertical, horizontal;
     [SerializeField] Movement playerMovement;
     [SerializeField] SemiFixedCameraControl semiFixedCamera;
+    [SerializeField] private ItemCollector itemCollector;
 
     private void Update()
     {
         vertical = Input.GetAxisRaw("Vertical");
         horizontal = Input.GetAxisRaw("Horizontal");
+
+        if (Input.GetButtonDown("Interact"))
+        {
+            itemCollector.CollectItem();
+        }
 
         /*if(semiFixedCamera != null)
         {
